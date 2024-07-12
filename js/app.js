@@ -3,10 +3,10 @@ const winningScore = 10;
 const greatPoints = 2;
 const goodPoints = 1;
 const badPoints = 0;
+const choices = [];
 
 /*---------- Variables (state) ---------*/
 let playerChoice = null;
-let displayScene = null;
 let progressBar = 0;
 let whichQuestion = 0;
 
@@ -16,22 +16,37 @@ let playerScore = 0;
 const npcDialogue = document.querySelector('.npc-text');
 
 /*-------------- Functions -------------*/
-const init = () => {
-    displayScene();
-    render();
-}
-
-const render = () => {
+const displayScene = () => {
     //
 }
+
+const introduction = () => {
+    document.querySelector('.message').innerText = introQuestion[0].questionIntro;
+    document.getElementById('first').innerText = introQuestion[0].options[0].answer;
+    document.getElementById('second').innerText = introQuestion[0].options[1].answer;
+    document.getElementById('third').innerText = introQuestion[0].options[2].answer;
+}
+
+const init = () => {
+    introduction();
+    // render();
+}
+
+init();
+
+// const render = () => {
+//     //
+// }
 
 //First question chooses what array you're using!
 
 //access array, at this array at this question, at this answer
 //.options
 
+
+
 class Scenes {
-    //
+
 }
 
 const getPlayerChoice = (event) => {
