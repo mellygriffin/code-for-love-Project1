@@ -25,11 +25,6 @@ const render = () => {
     //
 }
 
-//two arrays: consts - Hobbies Questions, About You Questions
-//five objects in each array, for each questions
-//properties: question, key: What would youb like to talk
-//options: Choices array, objects
-
 //First question chooses what array you're using!
 
 //access array, at this array at this question, at this answer
@@ -39,13 +34,24 @@ class Scenes {
     //
 }
 
-/*----------- Event Listeners ----------*/
-const handleClick = () => {
-
+const getPlayerChoice = (event) => {
+    playerChoice = event.target.id;
 }
 
-/*-------------- Array -------------*/
+const play = function(event){
+    console.log('Clicked!');
+}
 
+/*----------- Event Listeners ----------*/
+document.getElementById('first').addEventListener('click', play);
+document.getElementById('second').addEventListener('click', play);
+document.getElementById('third').addEventListener('click', play);
+
+/*-------------- Array -------------*/
+//two arrays: consts - Hobbies Questions, About You Questions
+//five objects in each array, for each questions
+//properties: question, key: What would youb like to talk
+//options: Choices array, objects
 const introQuestion = [
     {questionIntro: 'What would you like to talk about?',
         options: [

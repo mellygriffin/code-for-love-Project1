@@ -13,7 +13,7 @@ body {
 .button {
     background-color:#cb72cb;
     color: white;
-    border: none;
+    border-color: #ecbaec;
     border-radius: 25%;
     padding: 10px;
 }
