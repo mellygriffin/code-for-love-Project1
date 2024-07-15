@@ -18,12 +18,22 @@ h1 {
     align-self: left;
 }
 
+h2 {
+    display: flex;
+    align-items: right;
+}
+
+h3 {
+    color: white;
+}
+
 .button {
     background-color:#cb72cb;
     color: white;
     border-color: #ecbaec;
     border-radius: 25%;
     padding: 10px;
+    text-wrap: wrap;
 }
 
 #reset {
