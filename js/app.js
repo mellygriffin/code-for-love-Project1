@@ -151,9 +151,11 @@ const play = function(event){
     }
 }
 
-// const endGame = () => {
-//     if //
-// }
+const endGame = () => {
+    if (question === 4) {
+        
+    }
+}
 
 class Scenes {
     //
@@ -166,3 +168,5 @@ init();
 document.getElementById('first').addEventListener('click', play);
 document.getElementById('second').addEventListener('click', play);
 document.getElementById('third').addEventListener('click', play);
+
+document.getElementById('reset').addEventListener('click', init);
