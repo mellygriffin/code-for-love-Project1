@@ -20,7 +20,7 @@ h1 {
 
 h2 {
     display: flex;
-    align-items: right;
+    align-self: right;
 }
 
 h3 {
@@ -40,6 +40,8 @@ h3 {
   } */
 
 .button {
+    display: flex;
+    flex-direction: column;
     background-color:#cb72cb;
     color: white;
     border-color: #ecbaec;

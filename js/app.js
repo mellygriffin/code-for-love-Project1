@@ -45,9 +45,9 @@ const aboutYou = [
     },
     {question: 'Do you like to travel?',
         options: [
-            {answer: 'Yes', choice: 'good'},
-            {answer: 'No', choice: 'bad'},
-            {answer: 'As long as I have an extension cord...', choice: 'great'}
+            {answer: 'Yes', choice: 1},
+            {answer: 'No', choice: 0},
+            {answer: 'As long as I have an extension cord...', choice: 2}
         ]
     }
 ]
@@ -138,8 +138,8 @@ const pointValue = (choice) => {
     } else if (choice === 'third') {
         playerPoints = playerPoints + category[whichQuestion].options[2].choice;
     }
+    console.log(choice)
 }
-
 
 const displayPoints = () => {
     document.getElementById('pointsCounter').innerText = playerPoints
@@ -148,14 +148,19 @@ const displayPoints = () => {
 const init = () => {
     introduction();
     playerPoints = 0;
-    // play();
 }
 
 const render = () => {
     displayPoints()
+    if (whichQuestion > 4) endGame();
 }
 
 const play = function(event){
+    if (whichQuestion === 4) {
+        pointValue(event.target.id)
+        whichQuestion = whichQuestion + 1
+        return render()
+    }
     if (event.target.id === 'first' && !category) {
         category = aboutYou
         questionDisplay(aboutYou)
@@ -168,6 +173,7 @@ const play = function(event){
         pointValue(event.target.id)
         whichQuestion = whichQuestion + 1
         questionDisplay(category)
+        console.log(whichQuestion)
     }
     render()
 }
@@ -180,9 +186,9 @@ const play = function(event){
 
 
 const endGame = () => {
-    if (whichQuestion === 4 && playerPoints === 10) {
+    if (whichQuestion === 5 && playerPoints === 10) {
         console.log('You win!')
-    } else if (whichQuestion === 4 && playerPoints < 10) {
+    } else if (whichQuestion === 5 && playerPoints < 10) {
         console.log('You lose!')
     } else {
         console.log('You lose!')
