@@ -1,4 +1,4 @@
-// Array
+/*-------------- Array -------------*/
 //two arrays: consts - Hobbies Questions, About You Questions
 //five objects in each array, for each questions
 //properties: question, key: What would youb like to talk
@@ -96,16 +96,17 @@ const greatPoints = 2;
 const goodPoints = 1;
 const badPoints = 0;
 const choices = [];
-
+    
+    
 /*---------- Variables (state) ---------*/
 let playerChoice = null;
 let progressBar = 0;
 let whichQuestion = 0;
+let category = null;
 
 
 /*----- Cached Element References  -----*/
 let playerScore = 0;
-const npcDialogue = document.querySelector('.npc-text');
 
 /*-------------- Functions -------------*/
 //First question chooses what array you're using!
@@ -113,40 +114,46 @@ const npcDialogue = document.querySelector('.npc-text');
 //access array, at this array at this question, at this answer
 //.options
 const introduction = () => {
-    document.querySelector('.message').innerText = aboutYou[0];
+    document.querySelector('.message').innerText = introQuestion[0].questionIntro;
     document.getElementById('first').innerText = introQuestion[0].options[0].answer;
     document.getElementById('second').innerText = introQuestion[0].options[1].answer;
     document.getElementById('third').innerText = introQuestion[0].options[2].answer;
 }//VERY FIRST SCREEN - HAS TWO OPTIONS that switch scenes
 
-const aboutYouQuestions = () => {
-    document.querySelector('.message').innerText = aboutYou[0].question;
-    document.getElementById('first').innerText = aboutYou[0].options[0].answer;
-    document.getElementById('second').innerText = aboutYou[0].options[1].answer;
-    document.getElementById('third').innerText = aboutYou[0].options[2].answer;
-}//these work!
+const questionDisplay =  (choice) => {
+    document.querySelector('.message').innerText = choice[whichQuestion].question
+    document.getElementById('first').innerText = choice[whichQuestion].options[0].answer
+    document.getElementById('second').innerText = choice[whichQuestion].options[1].answer
+    document.getElementById('third').innerText = choice[whichQuestion].options[2].answer
+}
 
-const hobbiesQuestions = () => {
-    document.querySelector('.message').innerText = aboutYou[1].question;
-    document.getElementById('first').innerText = aboutYou[1].options[0].answer;
-    document.getElementById('second').innerText = aboutYou[1].options[1].answer;
-    document.getElementById('third').innerText = aboutYou[1].options[2].answer;
-}//these work!
+const categorySelect = (choice) => {
+    //
+}
 
 const init = () => {
     introduction();
-    play();
-}
-
-const getPlayerChoice = (event) => {
-    playerChoice = event.target.id;
+    // play();
 }
 
 const play = function(event){
-    if (event === introQuestion[0].options[0].answer) {
-        aboutYouQuestions();
+    if (event.target.id === 'first' && !category) {
+        category = aboutYou
+        questionDisplay(aboutYou)
+    } else if (event.target.id === 'second' && !category) {
+        category = hobbiesInterests
+        questionDisplay(hobbiesInterests)
+    } else if (event.target.id === 'third' && !category) {
+        console.log('End game')
+    } else {
+        whichQuestion = whichQuestion + 1
+        questionDisplay(category)
     }
 }
+
+// const endGame = () => {
+//     if //
+// }
 
 class Scenes {
     //
