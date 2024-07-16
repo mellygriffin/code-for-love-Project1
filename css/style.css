@@ -21,10 +21,9 @@ body {
 h3 {
     align-self: flex-start;
     align-items: flex-start;
-    margin-top: 5%;
-    margin-bottom: auto;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-right: 20%;
+    max-height: 100px;
     font-style: italic;
     font-weight: lighter;
     color: white;
