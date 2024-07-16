@@ -125,10 +125,6 @@ const questionDisplay =  (choice) => {
     document.getElementById('third').innerText = choice[whichQuestion].options[2].answer
 }
 
-// const categorySelect = (choice) => {
-//     //
-// }
-
 const pointValue = (choice) => {
     console.log(choice)
     if (choice === 'first') {
