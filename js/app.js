@@ -183,11 +183,11 @@ const play = function(event){
 
 const endGame = () => {
     if (whichQuestion === 5 && playerPoints === 10) {
-        console.log('You win!')
+        document.getElementById('result').innerText = "Date Success!"
     } else if (whichQuestion === 5 && playerPoints < 10) {
-        console.log('You lose!')
+        document.getElementById('result').innerText = "Date Fail..."
     } else {
-        console.log('You lose!')
+        document.getElementById('result').innerText = "Date Fail..."
     }
 }
 
