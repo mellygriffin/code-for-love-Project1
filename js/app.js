@@ -144,6 +144,8 @@ const displayPoints = () => {
 const init = () => {
     introduction();
     playerPoints = 0;
+    document.getElementById('result').innerText = ""
+    document.getElementById('reset').style.opacity = "0";
 }
 
 const render = () => {
@@ -164,6 +166,7 @@ const play = function(event){
         category = hobbiesInterests
         questionDisplay(hobbiesInterests)
     } else if (event.target.id === 'third' && !category) {
+        document.querySelector('.message').innerText = "That's rude..."
         console.log('End game')
     } else {
         pointValue(event.target.id)
@@ -184,10 +187,13 @@ const play = function(event){
 const endGame = () => {
     if (whichQuestion === 5 && playerPoints === 10) {
         document.getElementById('result').innerText = "Date Success!"
-    } else if (whichQuestion === 5 && playerPoints < 10) {
-        document.getElementById('result').innerText = "Date Fail..."
+        document.getElementById('reset').style.opacity = "100";
+    } else if (whichQuestion === 5 && playerPoints >= 5) {
+        document.getElementById('result').innerText = "Maybe they'll call back?"
+        document.getElementById('reset').style.opacity = "100";
     } else {
         document.getElementById('result').innerText = "Date Fail..."
+        document.getElementById('reset').style.opacity = "100";
     }
 }
 

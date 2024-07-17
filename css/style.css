@@ -66,12 +66,7 @@ div > img {
     width: 100%;
 }
 
-
-
 .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color:#cb72cb;
     color: white;
     border-color: #ecbaec;
@@ -85,12 +80,21 @@ div > img {
 }
 
 #result {
-    color: black;
+    justify-self: center;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+    margin-top: auto;
+    margin-bottom: 10px;
+    color: rgb(125, 6, 103);
 }
 
 #reset {
-    margin: -40px;
+    justify-self: center;
+    font-size: large;
+    margin-top: auto;
+    opacity: 0%;
     background: none;
     border: none;
-    color: white;
+    color: rgb(231, 224, 224);
 }
