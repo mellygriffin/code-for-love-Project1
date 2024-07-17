@@ -126,15 +126,28 @@ const questionDisplay =  (choice) => {
 }
 
 const pointValue = (choice) => {
-    console.log(choice)
     if (choice === 'first') {
         playerPoints = playerPoints + category[whichQuestion].options[0].choice;
+        expressionChange(category[whichQuestion].options[0].choice);
     } else if (choice === 'second') {
         playerPoints = playerPoints + category[whichQuestion].options[1].choice;
+        expressionChange(category[whichQuestion].options[1].choice);
     } else if (choice === 'third') {
         playerPoints = playerPoints + category[whichQuestion].options[2].choice;
+        expressionChange(category[whichQuestion].options[2].choice);
     }
-    console.log(choice)
+}
+
+const expressionChange = (choice) => {
+    if (choice === 2) {
+        document.getElementById("date").src = './assets/great-answer.png';
+    } else if (choice === 1) {
+        document.getElementById("date").src = './assets/good-answer.png';
+    } else if (choice === 0) {
+        document.getElementById("date").src = './assets/bad-answer.png';
+    } else {
+        document.getElementById("date").src = './assets/tv-test.png';
+    }
 }
 
 const displayPoints = () => {
@@ -146,6 +159,7 @@ const init = () => {
     playerPoints = 0;
     document.getElementById('result').innerText = ""
     document.getElementById('reset').style.opacity = "0";
+    document.getElementById("date").src = './assets/tv-test.png';
 }
 
 const render = () => {
