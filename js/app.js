@@ -108,10 +108,6 @@ let audio = document.getElementById('cafe-song');
 let playerScore = 0;
 
 /*-------------- Functions -------------*/
-//First question chooses what array you're using!
-
-//access array, at this array at this question, at this answer
-//.options
 audio.volume = 0.05;
 audio.loop = true;
 
@@ -181,13 +177,6 @@ const play = function(event){
     render()
 }
 
-
-
-// const questionCount = () => {
-//     document.getElementById('numberLeft').innerText = whichQuestion[i++] + "/5";
-// }
-
-
 const endGame = () => {
     if (whichQuestion === 5 && playerPoints === 10) {
         document.getElementById('result').innerText = "Date Success!"
@@ -199,10 +188,6 @@ const endGame = () => {
         document.getElementById('result').innerText = "Date Fail..."
         document.getElementById('reset').style.opacity = "100";
     }
-}
-
-class Scenes {
-    //
 }
 
 init();
