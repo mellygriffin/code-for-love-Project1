@@ -16,10 +16,10 @@
 
   </div>
 
-    ## Screenshots 
+## Screenshots 
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  | <h3>Feed Page</h3> | <img src="https://github.com/amarpan/meet-your-classmates/blob/main/public/Screenshots/FeedPage.png?raw=true"
-    width="700"
-  /> |
+  | <img src="./assets/Code-for-Love-ss.png" width="700"/> |
+
+ ## Future Changes
