@@ -9,8 +9,8 @@ body {
     background: #e990d4;
     background-repeat: repeat;
     background-position: center;
-    width: 100vw;
-    height: 100vw;
+    width: auto;
+    height: 80vw;
 }
 
 #logo {
@@ -27,7 +27,9 @@ body {
 h3 {
     align-self: flex-start;
     align-items: flex-start;
-    margin-left: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20%;
     margin-right: 20%;
     max-height: 100px;
     font-style: italic;
