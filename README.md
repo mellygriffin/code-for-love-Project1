@@ -21,6 +21,9 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Home Screen, no options selected</h3> | <img src="./assets/Code-for-Love-ss.png" width="700"/> |
+  | <h3>"Great" Reaction, best option selected</h3> | <img src="./assets/Great-ss.png" width="700"/> |
+  | <h3>"Good" Reaction, neutral option selected</h3> | <img src="./assets/Good-ss.png" width="700"/> |
+  | <h3>"Bad" Reaction, worst option selected</h3> | <img src="./assets/Bad-ss.png" width="700"/> |
 
 
-## Future Changes:
+## Future Changes: 
