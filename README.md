@@ -20,8 +20,8 @@
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  | <h3>Home Screen, no options selected</h3> | <img src="./assets/"
-    width="700"
-  /> |
+  | <h3>Home Screen, no options selected</h3> | <img src="./assets/Code-for-Love-ss"
+    width="700"/> |
+    
 
 ## Future Changes:
