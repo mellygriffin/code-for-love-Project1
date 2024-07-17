@@ -101,6 +101,7 @@ let progressBar = 0;
 let whichQuestion = 0;
 let category = null;
 let playerPoints = 0;
+let audio = document.getElementById('cafe-song');
 
 
 /*----- Cached Element References  -----*/
@@ -111,6 +112,9 @@ let playerScore = 0;
 
 //access array, at this array at this question, at this answer
 //.options
+audio.volume = 0.05;
+audio.loop = true;
+
 const introduction = () => {
     document.querySelector('.message').innerText = introQuestion[0].questionIntro;
     document.getElementById('first').innerText = introQuestion[0].options[0].answer;

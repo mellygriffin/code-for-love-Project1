@@ -18,6 +18,12 @@ body {
     width: 200px;
 }
 
+#music-player {
+    align-self: flex-start;
+    margin-left: 10px;
+    opacity: 0;
+}
+
 h3 {
     align-self: flex-start;
     align-items: flex-start;
