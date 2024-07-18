@@ -175,6 +175,8 @@ const render = () => {
 
 const play = function(event){
     audio.play()
+    audio.volume = 0.05;
+    audio.loop = true;
     if (whichQuestion === 4) {
         pointValue(event.target.id)
         whichQuestion = whichQuestion + 1
