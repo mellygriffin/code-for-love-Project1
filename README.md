@@ -35,10 +35,10 @@
   ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
   ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
-## :desktop_computer: Getting Started
+## :love_letter: Getting Started
 
   <summary> How to Play</summary>
-    1. Choose between the two categories of topics by clicking either the "About Me" or "Hobbies and Interests" buttons.<p>
+    1. Choose between the two categories of topics by clicking either the "About Me" or "Hobbies and Interests" buttons.<p><p>
     2. Choose an answer to the question the npc poses to you on your date. Click the appropriate response by choosing from the three options on the three buttons below the npc.<p>
     3. Continue to answer questions until you receive one of three results: "Date Success", "Maybe they will call back?" or "Date Failure...".<p>
     4. Click the "Try again?" button below your result to reset the game and try again.<p>
@@ -52,8 +52,8 @@
 
 ## :construction: Upcoming Features
 
-- [:x:] Third topic choice with array of new questions
+- :white_square_button: Third topic choice with array of new questions
 
-- [:x:] Second date option, choose between two individuals at the start
+- :white_square_button: Second date option, choose between two individuals at the start
 
-- [:x:] Refresh graphics
+- :white_square_button: Refresh graphics
