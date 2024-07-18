@@ -160,6 +160,12 @@ const init = () => {
     document.getElementById('result').innerText = ""
     document.getElementById('reset').style.opacity = "0";
     document.getElementById("date").src = './assets/tv-test.png';
+    audio.play();
+    playerChoice = null;
+    progressBar = 0;
+    whichQuestion = 0;
+    category = null;
+    playerPoints = 0;
 }
 
 const render = () => {
