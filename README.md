@@ -38,11 +38,11 @@
 ## :desktop_computer: Getting Started
 
   <summary> How to Play</summary>
-    1. Choose between the two categories of topics by clicking either the "About Me" or "Hobbies and Interests" buttons.
-    2. Choose an answer to the question the npc poses to you on your date. Click the appropriate response by choosing from the three options on the three buttons below the npc.
-    3. Continue to answer questions until you receive one of three results: "Date Success", "Maybe they will call back?" or "Date Failure...".
-    4. Click the "Try again?" button below your result to reset the game and try again.
-
+    1. Choose between the two categories of topics by clicking either the "About Me" or "Hobbies and Interests" buttons.<p>
+    2. Choose an answer to the question the npc poses to you on your date. Click the appropriate response by choosing from the three options on the three buttons below the npc.<p>
+    3. Continue to answer questions until you receive one of three results: "Date Success", "Maybe they will call back?" or "Date Failure...".<p>
+    4. Click the "Try again?" button below your result to reset the game and try again.<p>
+<p>
 <details open>
   <summary> Deployed Link (GitHub) </summary>
   <a href="https://mellygriffin.github.io/code-for-love-Project1/"
