@@ -25,5 +25,35 @@
   | <h3>"Good" Reaction, neutral option selected</h3> | <img src="./assets/Good-ss.png" width="700"/> |
   | <h3>"Bad" Reaction, worst option selected</h3> | <img src="./assets/Bad-ss.png" width="700"/> |
 
+  ## :computer: Technologies Used
 
-## Future Changes: 
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+  ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
+  ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
+  ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
+  ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
+  ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
+  ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
+
+## :desktop_computer: Getting Started
+
+  <summary> How to Play</summary>
+    1. Choose between the two categories of topics by clicking either the "About Me" or "Hobbies and Interests" buttons.
+    2. Choose an answer to the question the npc poses to you on your date. Click the appropriate response by choosing from the three options on the three buttons below the npc.
+    3. Continue to answer questions until you receive one of three results: "Date Success", "Maybe they will call back?" or "Date Failure...".
+    4. Click the "Try again?" button below your result to reset the game and try again.
+
+<details open>
+  <summary> Deployed Link (GitHub) </summary>
+  <a href="https://mellygriffin.github.io/code-for-love-Project1/"
+    > https://mellygriffin.github.io/code-for-love-Project1/</a
+  >
+</details>
+
+## :construction: Upcoming Features
+
+- [:x:] Third topic choice with array of new questions
+
+- [:x:] Second date option, choose between two individuals at the start
+
+- [:x:] Refresh graphics
