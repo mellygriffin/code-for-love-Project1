@@ -174,6 +174,7 @@ const render = () => {
 }
 
 const play = function(event){
+    audio.play()
     if (whichQuestion === 4) {
         pointValue(event.target.id)
         whichQuestion = whichQuestion + 1
@@ -219,7 +220,3 @@ document.getElementById('second').addEventListener('click', play);
 document.getElementById('third').addEventListener('click', play);
 
 document.getElementById('reset').addEventListener('click', init);
-
-window.addEventListener("load", (event) => {
-    audio.play();
-});
