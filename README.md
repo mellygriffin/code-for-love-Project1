@@ -12,7 +12,9 @@
 
   ## :hearts: Description
 
-  Code for Love takes you on the journey to whoo your blind date who just happens to be a computer! Choose from conversation categories and do your best to impress your date by selecting your answers.
+  Code for Love takes you on the journey to whoo your blind date who just happens to be a computer! Choose from conversation categories and do your best to impress your date by selecting your answers. 
+
+  Code for Love was inspired by traditional PC dating sims and visual novels where you sometimes have to test your knowledge of your date to get the best outcome. The graphic assets, such as the npc and logo, were hand drawn in Clip Paint Studio and accompanying loop audio was created in GarageBand.
 
   </div>
 
@@ -28,6 +30,8 @@
   ## :computer: Technologies Used
 
   ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+  ![Clip Paint Studio](https://img.shields.io/badge/Clip_Paint_Studio-grey)
+  ![GarageBand](https://img.shields.io/badge/GarageBand-grey)
   ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
   ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
   ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
