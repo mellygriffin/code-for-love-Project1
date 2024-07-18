@@ -108,9 +108,6 @@ let audio = document.getElementById('cafe-song');
 let playerScore = 0;
 
 /*-------------- Functions -------------*/
-audio.volume = 0.05;
-audio.loop = true;
-audio.play();
 
 const introduction = () => {
     document.querySelector('.message').innerText = introQuestion[0].questionIntro;
@@ -167,6 +164,8 @@ const init = () => {
     whichQuestion = 0;
     category = null;
     playerPoints = 0;
+    audio.volume = 0.05;
+    audio.loop = true;
 }
 
 const render = () => {
