@@ -219,3 +219,7 @@ document.getElementById('second').addEventListener('click', play);
 document.getElementById('third').addEventListener('click', play);
 
 document.getElementById('reset').addEventListener('click', init);
+
+addEventListener("load", (event) => {
+    audio.play();
+});
