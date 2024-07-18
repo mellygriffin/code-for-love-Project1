@@ -110,6 +110,7 @@ let playerScore = 0;
 /*-------------- Functions -------------*/
 audio.volume = 0.05;
 audio.loop = true;
+audio.play();
 
 const introduction = () => {
     document.querySelector('.message').innerText = introQuestion[0].questionIntro;
