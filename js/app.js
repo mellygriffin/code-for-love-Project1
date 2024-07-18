@@ -220,6 +220,6 @@ document.getElementById('third').addEventListener('click', play);
 
 document.getElementById('reset').addEventListener('click', init);
 
-addEventListener("load", (event) => {
+window.addEventListener("load", (event) => {
     audio.play();
 });
