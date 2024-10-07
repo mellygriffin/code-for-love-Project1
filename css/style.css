@@ -13,6 +13,17 @@ body {
     height: 80vw;
 }
 
+
+#bubble {
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.message {
+    font-size: calc(12px + 1.5vw);
+    color: rgb(125, 6, 103);
+}
+
 #logo {
     align-self: flex-start;
     width: 300px;
@@ -71,12 +82,25 @@ div > img {
     width: 100%;
 }
 
+.clickables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .button {
     background-color:#cb72cb;
     color: white;
     border-color: #ecbaec;
+    border-style: none;
     border-radius: 25%;
-    padding: 10px;
+    padding: 20px;
+    font-size: medium;
+    margin: 20px;
+    font-weight: bold;
+    text-wrap: wrap;
+    max-width: 200px;
 }
 
 #pointsCounter {
